@@ -23,8 +23,20 @@ You need K8S/OCP platform with KNative Operator installed
 
 ## Execution
 
-export DMN=localhost:8080
+export DMN=http://localhost:8080
 
-curl -d @data/calculmiles-CDG-KIX-gold.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/MilesCalculation   2> /dev/null | jq 
+> curl -d @data/calculmiles-CDG-KIX-gold.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/MilesCalculation   2> /dev/null | jq 
 
-curl -d @data/calculmiles-CDG-JFK-silver.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/MilesCalculation   2> /dev/null | jq 
+> curl -d @data/calculmiles-CDG-JFK-silver.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/MilesCalculation   2> /dev/null | jq 
+
+> curl -d @data/kyc.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/KYC   2> /dev/null | jq 
+
+> curl -d @data/kyc-false-1M-JP.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/KYC   2> /dev/null | jq 
+
+> curl -d @data/kyc-true-150k-US.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/KYC   2> /dev/null | jq 
+
+
+### Credits 
+
+@mouachan
+
