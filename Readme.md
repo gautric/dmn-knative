@@ -9,7 +9,7 @@ This project is a set of DMN sample running with Kogito over Docker for local en
 
 ### Maven
 
->  mvn clean comile quarkus:dev
+>  mvn clean compile quarkus:dev
 
 ### Docker
 
