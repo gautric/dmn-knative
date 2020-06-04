@@ -5,6 +5,21 @@
 
 This project is a set of DMN sample running with Kogito over Docker for local env or Knative for Cloud env
 
+## Install KNative Operator
+
+### Install KNative Operator
+
+TODO
+
+### Install KNative Serving
+
+> oc create namespace knative-serving
+
+> oc apply -f knative-serving.yaml
+
+> oc get knativeserving.operator.knative.dev/knative-serving -n knative-serving --template='{{range .status.conditions}}{{printf "%s=%s\n" .type .status}}{{end}}'
+
+
 ## Compilation
 
 ### Maven
