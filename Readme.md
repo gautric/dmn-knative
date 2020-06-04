@@ -9,7 +9,9 @@ This project is a set of DMN sample running with Kogito over Docker for local en
 
 ### Install KNative Operator
 
-TODO
+> oc project openshift-operators
+
+> oc apply -f knative-operator.yaml
 
 ### Install KNative Serving
 
@@ -38,7 +40,7 @@ You need K8S/OCP platform with KNative Operator installed
 
 ## Execution
 
-export DMN=http://localhost:8080
+export DMN_URL=http://localhost:8080
 
 > curl -d @data/calculmiles-CDG-KIX-gold.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/MilesCalculation   2> /dev/null | jq 
 
@@ -54,4 +56,9 @@ export DMN=http://localhost:8080
 ### Credits 
 
 @mouachan
+
+### Links
+
+* <https://access.redhat.com/documentation/en-us/openshift_container_platform/4.4/html-single/serverless_applications/index>
+* <https://knative.dev/docs/serving/>
 
