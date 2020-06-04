@@ -21,7 +21,6 @@ This project is a set of DMN sample running with Kogito over Docker for local en
 
 > oc get knativeserving.operator.knative.dev/knative-serving -n knative-serving --template='{{range .status.conditions}}{{printf "%s=%s\n" .type .status}}{{end}}'
 
-
 ## Compilation
 
 ### Maven
@@ -40,7 +39,7 @@ You need K8S/OCP platform with KNative Operator installed
 
 ## Execution
 
-export DMN_URL=http://localhost:8080
+> export DMN_URL=http://localhost:8080
 
 > curl -d @data/calculmiles-CDG-KIX-gold.json -X POST -H "Content-Type: application/json"  ${DMN_URL}/MilesCalculation   2> /dev/null | jq 
 
