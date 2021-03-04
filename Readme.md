@@ -66,7 +66,7 @@ You need K8S/OCP platform with KNative Operator installed
 
 ### Links
 
-
 * https://docs.openshift.com/container-platform/4.6/serverless/installing_serverless/installing-openshift-serverless.html[Operator installation]
 * https://docs.openshift.com/container-platform/4.6/serverless/installing_serverless/installing-knative-serving.html#serverless-install-serving-yaml_installing-knative-serving[]
 * <https://knative.dev/docs/serving/>
+* https://knative.dev/docs/install/install-kn/[Knative CLI]
