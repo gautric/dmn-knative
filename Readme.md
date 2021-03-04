@@ -21,6 +21,14 @@ This project is a set of DMN sample running with Kogito over Docker for local en
 
 > oc get knativeserving.operator.knative.dev/knative-serving -n knative-serving --template='{{range .status.conditions}}{{printf "%s=%s\n" .type .status}}{{end}}'
 
+....
+DependenciesInstalled=True
+DeploymentsAvailable=True
+InstallSucceeded=True
+Ready=True
+VersionMigrationEligible=True
+....
+
 ## Compilation
 
 ### Maven
@@ -58,6 +66,7 @@ You need K8S/OCP platform with KNative Operator installed
 
 ### Links
 
-* <https://access.redhat.com/documentation/en-us/openshift_container_platform/4.4/html-single/serverless_applications/index>
-* <https://knative.dev/docs/serving/>
 
+* https://docs.openshift.com/container-platform/4.6/serverless/installing_serverless/installing-openshift-serverless.html[Operator installation]
+* https://docs.openshift.com/container-platform/4.6/serverless/installing_serverless/installing-knative-serving.html#serverless-install-serving-yaml_installing-knative-serving[]
+* <https://knative.dev/docs/serving/>
